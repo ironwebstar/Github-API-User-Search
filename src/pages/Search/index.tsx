@@ -12,9 +12,8 @@ const Search: React.FC = () => {
   const { data, isLoading, refetch } = useListUsers(searchValue);
 
   useEffect(() => {
-    if (searchValue) {
-      refetch();
-    }
+    if (searchValue) refetch();
+  // eslint-disable-next-line
   }, [searchValue])
 
   return (

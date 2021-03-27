@@ -18,5 +18,5 @@ const getRequest = async <T, K = any>(
 };
 
 // USERS API
-
-export const searchUsers = async (login: string) => await getRequest<IUsersResponse>(`/search/users?q=${login} in:login`);
+export const searchUsers = async (login: string) =>
+  await getRequest<IUsersResponse>(`/search/users?q=${login} in:login`);
